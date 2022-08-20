@@ -1,0 +1,61 @@
+.about_items{
+    .name_item{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 133.4%;
+        text-align: center;
+        text-transform: uppercase;
+        color: #000000;
+        margin-bottom: 70px;
+    }
+    .block{
+        background: #FFFFFF;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.45);
+        border-radius: 66px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px;
+        gap: 10px;
+        min-height: 495px;
+        margin-bottom: 50px;
+        &:nth-child(6){
+            margin-bottom: 200px;
+        }
+        .img{
+            display: block;
+            min-width: 395px;
+            height: 395px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .image_Max{
+            background-image: url(/img/about/max.png);
+            //background-size: 100%;
+        }
+        .image_Alex{
+            background-image: url(/img/about/alex.png);
+        }
+        .image_Nik{
+            background-image: url(/img/about/nick.png);
+        }
+        .image_Arina{
+            background-image: url(/img/about/arina.png);
+        }
+        .image_Maria{
+            background-image: url(/img/about/maria.png);
+        }
+        .text_block{
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 133.4%;
+            color: #000000;
+            max-width: 700px;
+        }
+    }
+}
