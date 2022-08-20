@@ -1,0 +1,92 @@
+.footer_items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 64px;
+    .name_footer{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 133.4%;
+        color: black;
+    }
+    .footer_partners{
+        display: flex;
+        min-width: 1170px;
+        justify-content: space-between;
+        
+        align-items: flex-start;
+        padding: 0px;
+        gap: 50px;
+        .footer_partner{
+            width: 123px;
+            height: 123px;
+            display: block;
+            background-color: #D9D9D9;
+            border-radius: 100px;
+        }
+    }
+    .textblock_name{
+        height: 99px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 133.4%;
+        color: #000000;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        .text{
+            padding-bottom: 10px;
+        }
+    }
+    .textblock{
+        box-sizing: border-box;
+        width: 770px;
+        height: 150px;
+        background: rgba(255, 255, 255, 0.7);
+        border: 3px solid #000000;
+        border-radius: 40px;
+        resize: none;
+        text-align: left;
+        padding-left: 36px;
+        padding-top: 14px;
+        color: #000000;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 133.4%;
+    }
+    ::-webkit-input-placeholder {
+        color: black;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 133.4%;
+    }
+    .footer_button{
+        background: #CCFF00;
+        border-radius: 30px;
+        width: 210px;
+        height: 58.56px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 133.4%;
+    }
+    .footer__footer{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 133.4%;
+        color: black;
+        padding-top: 36px;
+    }
+}
