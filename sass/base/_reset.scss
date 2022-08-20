@@ -31,8 +31,9 @@ body{
     font-size: 20px;
     color:#FFFFFF;
     font-family: 'Inter';
-    background-image:url("/img/bg_glav.png");
-    background-position: center 300px;
+    background-image:url(img/bg_glav.png);
+    background-position:bottom center;
+    background-size: 100%;
     min-height: 100vh;
     margin: 0; 
     padding: 0;
