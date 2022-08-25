@@ -11,12 +11,21 @@
         font-size: 24px;
         line-height: 133.4%;
         color: black;
+        @include table{
+            font-size: 16px;
+        }
     }
     .footer_partners{
         display: flex;
         min-width: 1170px;
         justify-content: space-between;
-        
+        @include desktop {
+            min-width: 604px;
+        }
+        @include table{
+            min-width: 248px;
+            gap: 0  ;
+        }
         align-items: flex-start;
         padding: 0px;
         gap: 50px;
@@ -26,6 +35,14 @@
             display: block;
             background-color: #D9D9D9;
             border-radius: 100px;
+            @include desktop{
+                width: 73px;
+                height: 73px;
+            }
+            @include table{
+                width: 38px;
+                height: 38px;
+            }
         }
     }
     .textblock_name{
@@ -41,6 +58,12 @@
         align-items: flex-end;
         .text{
             padding-bottom: 10px;
+        }
+        @include table{
+            font-size: 16px;
+        }
+        .logo_imageLR{
+            max-width: 29%;
         }
     }
     .textblock{
@@ -60,6 +83,14 @@
         font-weight: 500;
         font-size: 20px;
         line-height: 133.4%;
+        @include desktop{
+            width: 460.5px;
+            height: 111px;
+        }
+        @include table{
+            width: 248px;
+            height: 87px;
+        }
     }
     ::-webkit-input-placeholder {
         color: black;
@@ -68,6 +99,9 @@
         font-weight: 500;
         font-size: 20px;
         line-height: 133.4%;
+        @include table{
+            font-size: 11px;
+        }
     }
     .footer_button{
         background: #CCFF00;
@@ -88,5 +122,8 @@
         line-height: 133.4%;
         color: black;
         padding-top: 36px;
+        @include table{
+            font-size: 11px;
+        }
     }
 }
