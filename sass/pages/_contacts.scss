@@ -96,8 +96,11 @@
             padding-right: 0;
         }
         .contacts_img{
-            max-width: 35%;
+            max-width: 100%;
             padding-bottom: 54px;
+            @include table {
+                max-width:  35%;
+            }
         }
     }
     .block_img_2{
@@ -107,8 +110,11 @@
             padding-right: 0;
         }
         .contacts_img{
-            max-width: 35%;
+            max-width: 100%;
             padding-bottom: 54px;
+            @include table{
+                max-width: 35%;
+            }
         }
     }
     
