@@ -3,9 +3,8 @@
     position: relative;
     margin-bottom: -101px;
     
-    .header_container{
-        //margin: 0 auto;
-    }
+    // .header_container{
+    //     }
 }
 
 .nav-list{
@@ -18,19 +17,23 @@
         &:not(:first-child){
             margin-left: 84px;
         }
-        
-        
+    
     }
 }
 .header-menu{
     display: flex;
     justify-content: end;
     padding-right: 61px;
+    @include desktop{
+        display: none;
+    }
 
 }
 .header-2{
     padding-top: 29px;
-    
+    @include desktop{
+        padding-top: 41px;
+    }
     .header_contacts{
         display: flex;
         justify-content: space-between;
@@ -38,9 +41,15 @@
         background: url(img/contacts/header_back.png);
         background-repeat: no-repeat;
         background-position: top center;
-        background-size: 100%;
+        background-size: 100% 100%;
         min-height: 444px;
-        
+        @include desktop {
+            min-height: 355px;
+        }
+        @include table{
+            min-height: 251px;
+            background: url(img/contacts/header_back_mini.png);
+        }
     }
     .headermenu_contacts{
         padding-top: 71px;
@@ -51,8 +60,22 @@
         // align-items: center;
         padding-top: 53px;
         padding-left: 65px;
+        @include desktop{
+            padding-left: 51px;
+            padding-top: 37.5px;
+        }
+        @include table{
+            padding-left: 18px;
+            padding-top: 39px;
+        }
         .logo_img{
             max-width: 100%;
+            @include desktop{
+                max-width: 70%;
+            }
+            @include table{
+                max-width: 90%;
+            }
         }
     }
 }
