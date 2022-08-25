@@ -1,9 +1,8 @@
 .first-section_container{
     min-height: 811px;
-    background-image: url(../../img/first-section/back.png);
+    background-image: url(img/first-section/back.png);
     background-repeat: no-repeat;
     background-position:top center;
-    
     border-radius: 66px;
     background-size: 100%;
     
@@ -195,4 +194,8 @@
         
     }
     
+}
+
+.scroll-bar_container{
+    margin-bottom: 200px;
 }
