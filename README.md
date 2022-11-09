@@ -1,1 +1,1 @@
-https://alex-vvhite.github.com/stud_centrium
+stud-centrium.ru
