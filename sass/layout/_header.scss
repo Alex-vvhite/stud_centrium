@@ -2,33 +2,80 @@
     padding-top: 80px;
     position: relative;
     margin-bottom: -101px;
-    
-    // .header_container{
-    //     }
+    z-index: 5;
+    @include desktop{
+        padding-top: 0;
+    }
+    @include table{
+        padding-top: 30px;
+    }
 }
 
 .nav-list{
     display: flex;
-   
+   @include desktop{
+    flex-direction: column;
+    align-items:center;
+    margin-top: 70px;
+   }
     .nav-item{
         font-family:Montserrat;
         font-size: 20px;
         line-height: 133.4%;
+        @include desktop{
+            margin-bottom: 25px;
+            font-size: 30px;
+            
+        }
         &:not(:first-child){
+            @include desktop{
+                margin-left: 0;
+            }
             margin-left: 84px;
         }
-    
+        
+        .nav-link{
+            transition: 0.2s;
+            &:hover{
+                border-bottom: solid #FFE2CB 2px;
+                color: #FFE2CB;
+                cursor: url(img/hover_cursor.svg) , auto;
+            }
+        }
     }
+    
 }
 .header-menu{
     display: flex;
     justify-content: end;
     padding-right: 61px;
     @include desktop{
-        display: none;
+        position:fixed;
+        //align-items: flex-start;
+        justify-content: center;
+        
+        padding-right: 0;
+        top: 0;
+        right: 0;
+        width: 300px;
+        height: 100%;
+        background-color:#7446D6;
+        opacity: 0.9;
+        transform: translate(100%,0);
+        transition: all 0.4s ease 0s;
+        overflow: auto;
+        
     }
-
+    ._active{
+        transform: translate(0,0);
+    }
 }
+.header-menu._active{
+    transform: translate(0,0);
+}
+
+
+
 .header-2{
     padding-top: 29px;
     @include desktop{
@@ -47,8 +94,13 @@
             min-height: 355px;
         }
         @include table{
-            min-height: 251px;
+            min-height: 251px;   
+        }
+        @include mobile{
             background: url(img/contacts/header_back_mini.png);
+            background-repeat: no-repeat;
+            background-position: top center;
+            background-size: 100% 100%;
         }
     }
     .headermenu_contacts{
@@ -71,10 +123,10 @@
         .logo_img{
             max-width: 100%;
             @include desktop{
-                max-width: 70%;
+                max-width: 80%;
             }
             @include table{
-                max-width: 90%;
+                max-width: 80%;
             }
         }
     }

@@ -1,3 +1,6 @@
+.main_container {
+    border-bottom:0px;
+  }
 .events_items{
     display: flex;
     flex-direction: column;
@@ -11,6 +14,13 @@
         text-align: center;
         text-transform: uppercase;
         color: #000000;
+        @include desktop{
+            max-width: 604px;
+        }
+        @include table{
+            font-size: 20px;
+            max-width: 248px;
+        }
     }
     .text_container{
         max-width: 770px;
@@ -23,12 +33,27 @@
         color: #000000;
         padding-top: 10px;
         padding-bottom: 70px;
+        @include desktop{
+            font-size: 15px;
+            max-width: 604px;
+        }
+        @include table{
+            font-size: 13px;
+            max-width: 248px;
+        }
     }
     .search_bar{
         background: #FFFFFF;
         border: 3px solid #000000;
         border-radius: 66px;
         padding: 15px 30px 15px 464px;
+        @include desktop{
+            max-width: 445.25px;
+        }
+        @include table{
+            padding: 15px 20px 15px 194px;
+            width: 194px;
+        }
     }
     
 }
@@ -38,10 +63,14 @@
     flex-direction: column;
     align-items: center;
     gap: 60px;
+    
     .block_event{
         display: flex;
         flex-direction: column;
         align-items: center;
+        
+        max-width: 1414px;
+        //overflow-y: hidden;
         .name_block{
             font-family: 'Montserrat';
             font-style: normal;
@@ -50,13 +79,25 @@
             line-height: 133.4%;
             color: #000000;
             padding-bottom: 20px;
+            @include table{
+                font-size: 22px;
+            }
         }
+
         .name_events{
             display: flex;
             align-items: center;
             padding: 0px;
             gap: 20px;
+            
+            justify-content: center;
+            flex-wrap: wrap;
+            
             .block{
+
+                flex: 0 0 auto;
+                //overflow-x: hidden;
+               
                 background: #CCFF00;
                 border-radius: 66px;
                 padding: 30px;
@@ -66,8 +107,194 @@
                 font-size: 18px;
                 line-height: 133.4%;
                 color: #000000;
+                @include desktop{
+                    font-size: 16px;
+                }
+                @include table{
+                    padding: 20px;
+                }
             }
             
         }
     }
+}
+.event_section{
+    overflow: hidden;
+   
+}
+.block_scroll-container{
+    display: flex;
+    flex-direction: column;
+    //justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+.section_scroll{
+    margin-top: 165px;
+    border-bottom:2px solid #000000;
+}
+.blocks_scroll{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: space-between;
+    @include desktop{
+        justify-content: space-around;
+    }
+    .block{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 50px 42px;
+        gap: 25px;
+        width: 368px;
+        height: 587px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.31);
+        border-radius: 39px;
+        @include desktop{
+            width: 296px;
+            height: 479px;
+            padding: 50px 0px;
+        }
+        @include table{
+            padding: 50px 0px;
+        }
+    }
+        .name{
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 124.5%;
+            color: #000000;
+            text-align: center;
+            height: 90px;
+            @include desktop{
+                font-size: 15px;
+            }
+        }
+        .date{
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 24px;
+            line-height: 153%;
+            color: #7446D6;
+            text-align: center;
+            @include desktop{
+                font-size: 16px;
+            }
+        }
+        .many{
+            background: #E6E6E6;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+            border-radius: 66px;
+            padding: 20px 40px;
+            gap: 10px;
+            width: 171px;
+            height: 60px;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 133.4%;
+            color: black;
+            cursor: url(img/hover_cursor.svg) , auto;
+        }
+        .image{
+         
+            .img{
+                width: 284px;
+                height: 238px;
+                
+                border-radius: 50px;
+                @include desktop{
+                    width: 218px;
+                    height: 175px;
+                }
+            }
+            
+        }
+}
+.blocks_pages{
+    display: flex;
+    gap: 35px;
+    @include table{
+        gap: 10px;
+    }
+    .circle{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 27px;
+        line-height: 133.4%;
+        color: #000000;
+        width: 67px;
+        height: 67px;
+        background: #EDEFDD;
+        border-radius: 100px;
+        transition: all 0.3s;
+        @include table{
+            width: 36px;
+            height: 36px;
+            font-size: 15px;
+        }
+        cursor: url(img/hover_cursor.svg) , auto;
+        transition: 0.2s;
+        &:hover{
+            background: #CCFF00;    
+        }
+    }
+    
+    ._inactive{
+        background: #EDEFDD;
+    }
+    ._activebl{
+        background: #CCFF00;
+        
+    }
+}
+.images{
+    display: flex;
+    width: 1184px;
+    justify-content: space-between;
+    align-items: flex-end;
+    @include desktop{
+        width: 694px;
+    }
+    @include table{
+        width: 296px;
+    }
+    .women{
+        margin-bottom: -3px;
+        .wm{
+            @include desktop{
+                height: 185px;
+            }
+            @include table{
+                height: 91px;
+            }
+        } 
+        
+    }
+    .man{
+        margin-bottom: -6px;
+        .mm{
+            @include desktop{
+                height: 229px;
+            }
+            @include table{
+                height: 110px;
+                margin-bottom: 1px;
+            }
+        }
+    }
+}
+._activebl{
+    background: #CCFF00;
 }

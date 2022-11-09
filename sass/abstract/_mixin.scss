@@ -9,3 +9,23 @@
 @mixin mobile{
     @media(max-width: $mobile-smalle-width){@content;}
 }
+
+@mixin table_2{
+    @media(max-width: $table_2_width){@content;}
+}
+
+@mixin table_3{
+    @media(max-width: $table_3_width){@content;}
+}
+
+@mixin table_4{
+    @media(max-width: $table_4_width){@content;}
+}
+
+@mixin table_5{
+    @media(max-width: $table_5_width){@content;}
+}
+
+@mixin table_6{
+    @media(max-width: $table_6_width){@content;}
+}

@@ -1,10 +1,20 @@
+body{
+    cursor: url(img/cursor.svg), auto;
+}
+body._lock{
+    overflow: hidden;
+}
 .first-section_container{
     min-height: 811px;
     background-image: url(img/first-section/back.png);
     background-repeat: no-repeat;
     background-position:top center;
     border-radius: 66px;
-    background-size: 100%;
+    background-size: 100% 100%;
+    @include table{
+        min-height: 709px;
+        background-image: url(img/first-section/back_mini.png);
+    }
     
 }
 .first-section_items{
@@ -13,14 +23,50 @@
     padding-left: 66px;
     max-height: 677px;
     
+    @include table{
+        padding-left: 20px;
+        padding-top: -10px;
+    }
     .first-section_item{
         padding-top: 73px;
+        z-index: 1;
+        @include table{
+            padding-top: 80px;
+        }
+        @include table_2{
+            padding-top: 45px;
+        }
+        @include table_3{
+            padding-top: 0px;
+            
+        }
+        @include table_4{
+            padding-top: -400px;
+            
+        }
+        @include table_5{
+           padding-top: 0;
+        }
         .image{
             display: flex;
             .logo{
                 max-width: 100%;
                 @include desktop{
-                    max-width: 80%;
+                    max-width: 90%;
+                }
+                @include table{
+                    padding-top: 10px;
+                }
+                @include table_3{
+                    padding-top: 0; 
+                    max-width: 70%;
+                }
+                @include table_4{
+                    padding-bottom: 0; 
+                    max-width: 70%;
+                }
+                @include table_5{
+                    max-width: 70%;
                 }
             }
         }
@@ -33,6 +79,10 @@
         line-height: 133.4%;
         padding-bottom: 31px;
         padding-top: 8px;
+        @include table{
+            font-size: 15px;
+            width: 202px;
+        }
     }
     .second_text{
         width: 473px;
@@ -40,12 +90,23 @@
         font-weight: 500;
         font-size: 15px;
         line-height: 133.4%;
+        @include desktop{
+            display: none;
+        }
+       
     }
     .first-section_image{
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
-    
+        z-index: 0;
+        @include table{
+            //width: 325px;
+            height: 416px;
+        }
+        @include table_4{
+            padding-bottom: 150px;
+        }
         // display: block;
         .command{
             display: flex;
@@ -53,14 +114,60 @@
             max-height: 100%;
             padding-top: 88px;
             @include desktop{
-                padding-top: 100px;
+                display: none;
+            }
+        }
+        .command_2{
+            display: none;
+            @include desktop{
+                display: block;
+                max-width: 628px;
+            
+                max-height: 721px;
+                position: absolute;
+                margin-top: 240px;
+            }
+            @include table{
                 max-width: 90%;
+                position: absolute;
+                padding-top: 150px;
+               
+            }
+            @include table_2{
+                margin-left: 11px;
+            }
+            @include table_3{
+                margin-top: 225px;
+                max-height: 570px;
+                margin-left: -18px;
+            }
+            @include table_4{
+                margin-top: 425px;
+                margin-left: -20px;
+            }
+            @include table_5{
+                margin-top: 420px;
+                margin-left: 0;
+            }
+            @include table_6{
+                margin-top: 386px;
+                margin-left: 10px;
+            }
+            @include mobile{
+                max-width: 92%;
+                padding-bottom: 55px;
+                margin-left: 19px;
             }
         }
     }
 }
 
 ////////////////////////////////SECOND-SECTION///////////////////////////////////
+.second-section{
+    .container{
+        @include table{padding: 0px 6px 0px 6px;}
+    }
+}
 .section_name{
     font-family:Montserrat;
     font-weight: 700;
@@ -70,7 +177,12 @@
     padding-left:67px;
     margin-top: 70px;
     padding-bottom: 60px;
+    @include table{
+        font-size: 20px ;
+        padding-left: 32px;
+    }
 }
+
 .section_green-block{
     background-color: #CCFF00;
     max-width: 1093px;
@@ -81,7 +193,10 @@
     flex: none;
     order: 0;
     flex-grow: 0;
-    
+    @include table{
+        padding: 40px 32px;
+        min-height: 219px;
+    }
 
     .section_first-text{
         font-family:Montserrat;
@@ -89,6 +204,10 @@
         font-size: 27px;
         line-height: 133.4%;
         color: black;
+        @include table{
+            font-size: 16px;
+            padding-bottom: 10px;
+        }
     }
     .section_second-text{
         font-family:Montserrat;
@@ -100,6 +219,12 @@
         text-align: right;
         span{
             font-weight: 700;
+            @include table{
+                font-size: 13px;
+            }
+        }
+        @include table{
+            font-size: 13px;
         }
     }
 }
@@ -122,6 +247,11 @@
     font-weight: 500;
     font-size: 15px;
     line-height: 133.4%;
+    @include table{
+        font-size: 11px;
+        margin: -20px 0px;
+        padding: 50px 32px;
+    }
     .name_spisok{
         font-weight: 700;
     }
@@ -138,6 +268,11 @@
 .third_section-items{
     .name_2{
         padding-top: 150px;
+        
+        @include table{
+            padding-left: 32px;
+            padding-top: 50px;
+        }
     }
     .blocks_section{
         display: flex;
@@ -156,6 +291,18 @@
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
             border-radius: 50px;
             padding: 47.5px 20px 40px 20px;
+            
+            @include desktop{
+                max-width: 286px;
+                max-height: 131px;
+                align-items: center;
+                justify-content: center;
+                padding: 20px 15px;
+            }
+            @include table{
+                max-width: 248px;
+                max-height: 112px;
+            }
             .text{
                 display: flex;
                 flex-direction: row;
@@ -173,11 +320,36 @@
                 font-size: 15px;
                 line-height: 133.4%;
                 text-transform: capitalize;
+                @include desktop{
+                    font-size: 13px;
+                    padding: 10px;
+                    width: 100%;
+                    height: 100%;
+                }
+                @include table{
+                    font-size: 11px;
+                }
             }
             .image{
                 width: 97px;
                 height: 115px;
                 display: block;
+                @include desktop{
+                    display: flex;
+                    align-items: center;
+                }
+                img{
+                    @include desktop{
+                        width: 75px;
+                        height: 91px;
+                        
+                }
+                @include table{
+                    width: 56px;
+                    height: 72px;
+                }
+                
+                }
             }
         }
         
@@ -188,10 +360,16 @@
     justify-content: flex-end;
     position: relative;
     margin-top: -200px;
-    .face_image{
+    .face{
         text-align: right;
         max-width: 100%;
-        
+        margin-top: 50px;
+        @include desktop{
+            max-width: 33%;
+        }
+        @include table{
+            margin-top: 200px;
+        }
     }
     
 }
@@ -199,3 +377,104 @@
 .scroll-bar_container{
     margin-bottom: 200px;
 }
+
+////////////////////////////////THIRD-SECTION///////////////////////////////////
+.scroll-bar_section{
+    margin-bottom: 200px;
+    //overflow: hidden;
+}
+.scroll-bar_container{
+    .block_first{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .right{
+            padding-left: 48.73px;
+        }
+    }
+    .blocks_airs{
+        @include desktop{
+            display: none;
+        }
+    }
+    .align_name{
+        @include desktop{
+            width: 607px;
+        }
+    }
+}
+.rev_slider{
+    // display: flex;
+    // justify-content: center;
+   overflow:hidden;
+    gap: 30px;
+    //width: 1960px;
+    padding-bottom: 5px;
+    @include desktop{
+       // max-width: 1731px;
+    }
+    .block{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 42px;
+        gap: 25px;
+        width: 368px;
+        height: 587px;
+
+        background: #FFFFFF;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.31);
+        border-radius: 39px;
+        .name{
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 124.5%;
+            color: #000000;
+            text-align: center;
+            height: 90px;
+            @include table{
+                font-size: 15px;
+            }
+        }
+        .date{
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 24px;
+            line-height: 153%;
+            color: #7446D6;
+            text-align: center;
+            @include table{
+                font-size: 16px;
+            }
+        }
+        .many{
+            background: #E6E6E6;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+            border-radius: 66px;
+            padding: 20px 40px;
+            gap: 10px;
+            width: 171px;
+            height: 60px;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 133.4%;
+            color: #000000;
+        }
+        .img{
+            width: 218px;
+            height: 175px;
+            @include table{
+                max-width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
