@@ -1,1 +1,1 @@
-stud-centrium.ru
+https://stud-centrium.ru
