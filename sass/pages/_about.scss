@@ -10,6 +10,7 @@
         color: #000000;
         margin-bottom: 70px;
     }
+    
     .block{
         background: #FFFFFF;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.45);
@@ -25,12 +26,24 @@
         &:nth-child(6){
             margin-bottom: 200px;
         }
+        @include table{
+            min-height: 652px;
+        }
         .img{
             display: block;
             min-width: 395px;
             height: 395px;
             background-repeat: no-repeat;
             background-position: center;
+            @include desktop{
+                min-width: 350px;
+                height: 350px;
+                background-size: 100%;
+            }
+            @include table{
+                min-width: 258px;
+                height: 258px;
+            }
         }
         .image_Max{
             background-image: url(img/about/max.png);
@@ -56,6 +69,27 @@
             line-height: 133.4%;
             color: #000000;
             max-width: 700px;
+            @include desktop{
+                font-size:20px;
+                text-align:center;
+            }
+            @include table{
+                font-size: 15px;
+            }
+        }
+    }
+    .block_1{
+        @include desktop {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+    }
+    .block_2{
+        @include desktop {
+            display: flex;
+            flex-direction:column-reverse;
+            justify-content: space-around;
         }
     }
 }

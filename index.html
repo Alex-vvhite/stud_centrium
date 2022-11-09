@@ -8,17 +8,27 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
 
+    <link rel="icon" href="/img/mini_logo.png" type="image/png">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>StudSentrium</title>
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="/slick/slick-theme.css">
+    <title>StudCentrium</title>
     
 </head>
 <body>
     <header class="header">
         <div class="container">
             <div class="header_container">
+                <div class="hamburger_block hamburger_margin">
+                    <span class="hamburger">
+                        <span class="hamburger__line"></span>
+                    </span>
+                </div>
+                
                 <div class="header-menu">
                     <nav class="nav">
                         <ul class="nav-list">
@@ -48,15 +58,13 @@
                             Информационный студенческий сайт ДНР
                         </div>
                         <div class="second_text">
-                            Любишь заниматься научно-исследовательской 
-                            деятельность и с удовольтвием работаешь в команде? 
-                            Проверь свои силы! На нашем сайте ты можешь найти 
-                            олимпиаду, конкурс или соревнование себе по душе.  
+                            Любишь участвовать в студенческих мероприятиях, с удовольствием работаешь в команде? Проверь свои силы! На нашем сайте ты можешь найти олимпиаду, конкурс или другое мероприятие себе по душе.
                         </div>
                     </div>
 
                     <div class="first-section_image">
                         <img src="img/first-section/comand.png" alt="" class="command">
+                        <img src="img/first-section/comand_2.png" alt="" class="command_2">
                     </div>
 
                 </div>
@@ -97,7 +105,7 @@
                         
                             <ul class="section-nav_list">
                                 <ol class="section-nav_item">Повышение информированности студентов о проводимых мероприятиях различного уровня.</ol>
-                                <ol class="section-nav_item">Уменьшение времени на поиск подходящих для студентов мероприятий.</ol>
+                                <ol class="section-nav_item">Сокращение времени на поиск подходящих для студентов мероприятий.</ol>
                                 <ol class="section-nav_item">Активизация участия молодежи Донецкой Народной Республики в различного рода инициативах.</ol>
                             </ul>
                         
@@ -113,8 +121,12 @@
                     <div class="third_section-items">
                         <div class="section_name name_2">
                             Почему стоит<br> 
-                            участвовать в образовательных 
-                            <br> мероприятиях?
+                            участвовать в конкурсах, 
+                            <br>
+                            форумах, конференциях 
+                            <br>
+                            и других мероприятиях  
+                            <br> для студенческой молодёжи?
                         </div>
                         <div class="blocks_section">
                             <div class="block_item">
@@ -170,7 +182,408 @@
         </section>
         <section class="scroll-bar_section">
             <div class="container scroll-bar_container">
+                <div class="block_first">
+                    <div class="blocks_airs">
+                        <img src="img/first-section/left.svg" alt="" class="left">
+                        <img src="img/first-section/right.svg" alt="" class="right">
+                    </div>
+                    <div class="section_name align_name">
+                        Успей зарегистрироваться
+                    </div>
+                </div>
                 
+            </div>
+            <!-- <div class="block_second"> -->
+            <div class="rev_slider">
+                <div class="block">
+                    <div class="name">
+                        Сообщество "Молодые инженеры ТЭК"
+                    </div>
+                    <div class="date">
+                        01.01.2022 - 31.12.2022
+                    </div>
+                    <div class="image">
+                        <img src="/img/talk/first.jpg" alt="" class=" img">
+                    </div>
+                    <a href="/pages/talk_1.html" class="many">Подробнее</a>
+                </div>
+
+                <div class="block">
+                    <div class="name">
+                        Всероссийский патриотический форум «Патриот - 2022»
+                    </div>
+                    <div class="date">
+                        09.12.2022 - 12.12.2022
+                    </div>
+                    <div class="image">
+                        <img src="/img/talk/second.jpg" alt=""class=" img">
+                    </div>
+                    <a href="/pages/talk_2.html" class="many">Подробнее</a>
+                </div>
+
+                <div class="block">
+                    <div class="name">
+                        Больше, чем работа
+                    </div>
+                    <div class="date">
+                        18.06.2022 - 31.12.2022
+                    </div>
+                    <div class="image">
+                        <img src="/img/talk/third.jpg" alt="" class=" img">
+                    </div>
+                    <a href="/pages/talk_3.html" class="many">Подробнее</a>
+                </div>
+
+                <div class="block">
+                    <div class="name">
+                        Проект «Бизнес.Поколение»
+                    </div>
+                    <div class="date">
+                        08.08.2022 - 27.11.2022
+                    </div>
+                    <div class="image">
+                        <img src="/img/talk/four.jpg" alt="" class=" img">
+                    </div>
+                    <a href="/pages/talk_4.html" class="many">Подробнее</a>
+                </div>
+
+                <div class="block">
+                    <div class="name">
+                        Молодежный конкурс военно-патриотической песни «Димитриевская суббота» 2022
+                    </div>
+                    <div class="date">
+                        03.11.2022 - 04.11.2022
+                    </div>
+                    <div class="image">
+                        <img src="/img/talk/five.jpg" alt="" class=" img">
+                    </div>
+                    <a href="/pages/talk_5.html" class="many">Подробнее</a>
+                </div>
+
+                <div class="block">
+                    <div class="name">
+                        МОЛОДЫЕ УЧЕНЫЕ 2.0
+                    </div>
+                    <div class="date">
+                        01.09.22 - 15.11.22
+                    </div>
+                    <div class="image">
+                        <img src="/img/talk/six.jpg" alt="" class="img">
+                    </div>
+                    <a href="talk_6.html" class="many" class="six_event">Подробнее</a>
+                </div>
+
+                <div class="block">
+                    <div class="name">
+                        Межрегиональный студенческий форум «Я - Волонтер»
+                    </div>
+                    <div class="date">
+                        27.10.2022 - 29.10.2022
+                    </div>
+                    <div class="image">
+                        <img src="/img/talk/seven.jpg" alt="" class=" img">
+                    </div>
+                    <a href="/pages/talk_7.html" class="many">Подробнее</a>
+                </div>
+
+                <div class="block">
+                    <div class="name">
+                        Всероссийская программа по развитию молодежного предпринимательства
+                    </div>
+                    <div class="date">
+                        15.10.2021 - 31.12.2022
+                    </div>
+                    <div class="image">
+                        <img src="/img/talk/eight.jpg" alt="" class=" img">
+                    </div>
+                    <a href="/pages/talk_8.html" class="many">Подробнее</a>
+                </div>
+
+                <div class="block">
+                    <div class="name">
+                        «Пишем будущее»
+                    </div>
+                    <div class="date">
+                        30.06.2022 - 30.10.2022
+                    </div>
+                    <div class="image">
+                        <img src="/img/talk/nine.png" alt="" class=" img">
+                    </div>
+                    <a href="/pages/talk_9.html" class="many">Подробнее</a>
+                </div>
+
+                <div class="block">
+                    <div class="name">
+                        Всероссийский конкурс «Начни игру»
+                    </div>
+                    <div class="date">
+                        бессрочно
+                    </div>
+                    <div class="image">
+                        <img src="/img/talk/ten.png" alt="" class=" img">
+                    </div>
+                    <a href="/pages/talk_10.html" class="many">Подробнее</a>
+                </div>
+
+                <div class="block">
+                    <div class="name">
+                        Экософия
+                    </div>
+                    <div class="date">
+                        06.06.2022 - 01.05.2023
+                    </div>
+                    <div class="image">
+                        <img src="/img/talk/eleven.jpg" alt="" class=" img">
+                    </div>
+                    <a href="/pages/talk_11.html" class="many">Подробнее</a>
+                </div>
+
+                <div class="block">
+                    <div class="name">
+                        Цифровой прорыв. Сезон: искусственный интеллект
+                    </div>
+                    <div class="date">
+                        Заявки принимаются до 25.11.2022
+                    </div>
+                    <div class="image">
+                        <img src="/img/talk/tvelf.png" alt="" class=" img">
+                    </div>
+                    <a href="/pages/talk_12.html" class="many">Подробнее</a>
+                </div>
+
+                <div class="block">
+                    <div class="name">
+                        Всероссийская олимпиада студентов «Я – профессионал»
+                    </div>
+                    <div class="date">
+                        29.09.22 - Май 2023 г.
+                    </div>
+                    <div class="image">
+                        <img src="/img/talk/13-th.jpg" alt="" class=" img">
+                    </div>
+                    <a href="talk_13.html" class="many">Подробнее</a>
+                </div>
+
+                <div class="block">
+                    <div class="name">
+                        Фотоконкурс Smithsonian
+                    </div>
+                    <div class="date">
+                        Дедлайн 30 ноября 2022 года.
+                    </div>
+                    <div class="image">
+                        <img src="/img/talk/14-th.jpg" alt="" class=" img">
+                    </div>
+                    <a href="/pages/talk_14.html" class="many">Подробнее</a>
+                </div>
+
+                <div class="block">
+                    <div class="name">
+                        Олимпиада по правоведению «Знатоки права»
+                    </div>
+                    <div class="date">
+                        15 декабря 2022 года.
+                    </div>
+                    <div class="image">
+                        <img src="/img/talk/15-th.png" alt="" class=" img">
+                    </div>
+                    <a href="talk_15.html" class="many">Подробнее</a>
+                </div>
+
+                <div class="block">
+                    <div class="name">
+                        Конкурс социальных роликов «Твой Взгляд @ Европа-Азия»
+                    </div>
+                    <div class="date">
+                        Заявки принимаются до 31 октября
+                    </div>
+                    <div class="image">
+                        <img src="/img/talk/16-th.jpg" alt="" class=" img">
+                    </div>
+                    <a href="/pages/talk_16.html" class="many">Подробнее</a>
+                </div>
+
+                <div class="block">
+                    <div class="name">
+                        Национальная технологическая олимпиада
+                    </div>
+                    <div class="date">
+                        Заявки принимаются до 28.10.2022
+                    </div>
+                    <div class="image">
+                        <img src="/img/talk/17-th.jpg" alt="" class=" img">
+                    </div>
+                    <a href="/pages/talk_17.html" class="many">Подробнее</a>
+                </div>
+
+                <div class="block">
+                    <div class="name">
+                        Конференция «Студенческая наука: физическая культура и спорт»
+                    </div>
+                    <div class="date">
+                        14-18 ноября 2022 года
+                    </div>
+                    <div class="image">
+                        <img src="/img/talk/15.5-th.png" alt="" class=" img">
+                    </div>
+                    <a href="talk_18.html" class="many">Подробнее</a>
+                </div>
+
+                <div class="block">
+                    <div class="name">
+                        Интеллектуальная социологическая викторина «Своя игра»
+                    </div>
+                    <div class="date">
+                        14 ноября 2022
+                    </div>
+                    <div class="image">
+                        <img src="/img/talk/15.5-th.png" alt="" class=" img">
+                    </div>
+                    <a href="talk_19.html" class="many">Подробнее</a>
+                </div>
+
+                <div class="block">
+                    <div class="name">
+                        Международный научный журнал «Правовая позиция»
+                    </div>
+                    <div class="date">
+                        бессрочно
+                    </div>
+                    <div class="image">
+                        <img src="/img/talk/20-th.jpg" alt="" class=" img">
+                    </div>
+                    <a href="talk_20.html" class="many">Подробнее</a>
+                </div>
+
+                <div class="block">
+                    <div class="name">
+                        Международный научный журнал «Психология человека и общества»
+                    </div>
+                    <div class="date">
+                        бессрочно
+                    </div>
+                    <div class="image">
+                        <img src="/img/talk/21-th.jpg" alt="" class=" img">
+                    </div>
+                    <a href="talk_21.html" class="many">Подробнее</a>
+                </div>
+
+                <div class="block">
+                    <div class="name">
+                        Молодежный медиа-конкурс буктрейлеров «ProКниги».
+                    </div>
+                    <div class="date">
+                        21 февраля 2022 года по 16 декабря 2022 года
+                    </div>
+                    <div class="image">
+                        <img src="/img/talk/22-th.png" alt="" class=" img">
+                    </div>
+                    <a href="talk_22.html" class="many">Подробнее</a>
+                </div>
+
+                <div class="block">
+                    <div class="name">
+                        Межнациональный студенческий форум «Российский студент 2022»
+                    </div>
+                    <div class="date">
+                        19-22 октября 2022
+                    </div>
+                    <div class="image">
+                        <img src="/img/talk/23-th.jpg" alt="" class=" img">
+                    </div>
+                    <a href="talk_23.html" class="many">Подробнее</a>
+                </div>
+
+                <div class="block">
+                    <div class="name">
+                        II Междисциплинарный медицинский форум
+                    </div>
+                    <div class="date">
+                        7 декабря 2022
+                    </div>
+                    <div class="image">
+                        <img src="/img/talk/24-th.png" alt="" class=" img">
+                    </div>
+                    <a href="talk_24.html" class="many">Подробнее</a>
+                </div>
+
+                <div class="block">
+                    <div class="name">
+                        II Научная конференция Socio Logos
+                    </div>
+                    <div class="date">
+                        29 октября 2022
+                    </div>
+                    <div class="image">
+                        <img src="/img/talk/25-th.jpg" alt="" class=" img">
+                    </div>
+                    <a href="talk_25.html" class="many">Подробнее</a>
+                </div>
+
+                <div class="block">
+                    <div class="name">
+                        Историко-патриотическая олимпиада «Октябрьская революция 1917 года»
+                    </div>
+                    <div class="date">
+                        09.11.22 - 11.11.22
+                    </div>
+                    <div class="image">
+                        <img src="/img/talk/26-th.jpg" alt="" class=" img">
+                    </div>
+                    <a href="talk_26.html" class="many">Подробнее</a>
+                </div>
+
+                <div class="block">
+                    <div class="name">
+                        Всероссийский конкурс «Будем жить»
+                    </div>
+                    <div class="date">
+                        03.10.22 - 27.11.22
+                    </div>
+                    <div class="image">
+                        <img src="/img/talk/27-th.png" alt="" class=" img">
+                    </div>
+                    <a href="talk_27.html" class="many">Подробнее</a>
+                </div>
+
+                <div class="block">
+                    <div class="name">
+                        VII Международная научно-практическая конференция
+                    </div>
+                    <div class="date">
+                        02 Декабря 2022 г.
+                    </div>
+                    <div class="image">
+                        <img src="/img/talk/28-th.jpg" alt="" class=" img">
+                    </div>
+                    <a href="talk_28.html" class="many">Подробнее</a>
+                </div>
+
+                <div class="block">
+                    <div class="name">
+                        «Сервис и предпринимательство в цифровой экономике XXI века»
+                    </div>
+                    <div class="date">
+                        14 Ноября - 16 Ноября 2022 г.
+                    </div>
+                    <div class="image">
+                        <img src="/img/talk/29-th.jpg" alt="" class=" img">
+                    </div>
+                    <a href="talk_29.html" class="many">Подробнее</a>
+                </div>
+
+                <div class="block">
+                    <div class="name">
+                        «Антикоррупционный комплаенс в контексте современных моделей ...»
+                    </div>
+                    <div class="date">
+                        25 Сентября - 25 Декабря 2024 г.
+                    </div>
+                    <div class="image">
+                        <img src="/img/talk/30-th.jpg" alt="" class=" img">
+                    </div>
+                    <a href="talk_30.html" class="many">Подробнее</a>
+                </div>
             </div>
         </section>
     </main>
@@ -214,5 +627,10 @@
             </div>
         </div>
     </footer>
+    <script type="text/javascript" src="jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="module" src="script.js"></script>
+    
 </body>
 </html>
